@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    background-color: aliceblue;
+}
+
+nav a{
+    background-color: blueviolet;
+    color:aquamarine;
+    padding: 8px;
+    margin: 0.26em;
+    transition: background-color 0.7s;
+}
+
+nav a:hover{
+    background-color: rgb(13, 159, 164);
+}
+
+header, main{
+    overflow: auto;
+}
