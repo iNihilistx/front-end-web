@@ -23,7 +23,7 @@ nav a:hover{
 
 /*
 the below code will only apply to devices with screens 500pxs wide or more . Larger device the menu toggler will not be needed because the nav itself will be displayed
-whether it has the open class or not. changed the flex direction to row so the menu items are displayed horizontally
+whether it has the open class or not. changed the flex direction to row so the menu items are displayed horizontally.
 */
 @media screen and (min-width: 500px){
     #menuToggler{
