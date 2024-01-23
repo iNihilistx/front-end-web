@@ -3,6 +3,6 @@ function greetMe(){
     alert("Hi");
 }
 
-var buttonTrigger = document.getElementById('buttonTrigger');
+let buttonTrigger = document.getElementById('buttonTrigger');
 
 buttonTrigger.addEventListener('click', greetMe)
