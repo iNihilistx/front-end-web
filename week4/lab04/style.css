@@ -1,0 +1,33 @@
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+nav.open{
+    display: flex;
+}
+
+nav a {
+    background-color: aliceblue;
+    color: rgb(1, 205, 185);
+    padding: 8px;
+    margin: 0.26em;
+    transition: background-color 0.7s;
+}
+
+nav a:hover{
+    background-color: aquamarine;
+}
+
+
+/*
+the below code will only apply to devices with screens 500pxs wide or more . Larger device the menu toggler will not be needed because the nav itself will be displayed
+whether it has the open class or not. changed the flex direction to row so the menu items are displayed horizontally
+*/
+@media screen and (min-width: 500px){
+    #menuToggler{
+        display: flex;
+        flex-direction: row;
+    }
+}
