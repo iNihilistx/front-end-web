@@ -23,13 +23,36 @@
       <section>
         <h2>Numbers</h2>
         <label for="myAge">Enter your age: </label>
-        <input id="myAge" type="number" value="18">
+        <input id="myAge" type="number" value="18" max="150" min="1">
       </section>
       <section>
         <h2>Ranges</h2>
         <label for="myHeight">Element Height: </label>
         <input id="myHeight" type="range" value="50">
         <div id="heightTarget"></div>
+      </section>
+      <section>
+        <input type="color" value="#ff0000">
+        <input type="date" value="2023-01-01">
+      </section>
+      <section>
+        <h2>Colours</h2>
+        <label for="myBg">Background: </label>
+        <input id="myBg" type="colour" value="#ffffff"><br>
+        <label for="myFg">Foreground: </label>
+        <input id="myFg" type="color" value="#000000">
+      </section>
+      <section>
+        <form id="login">
+          <h2>Sign in</h2>
+          <label for="myUser">Username: </label>
+          <input id="myUser" name="username" placeholder="Enter your username" required>
+          <label for="myPassword">Password: </label>
+          <input id="myPassword" type="password" name="password" placeholder="Enter your password" minlength="8" required>
+          <label for="myConfirmation">Confirm Password: </label>
+          <input id="myConfirmation" type="password" placeholder="Confirm Password" required>
+          <input type="submit" value="login">
+        </form>
       </section>
     </main>
     <script src="scripts.js"></script>
