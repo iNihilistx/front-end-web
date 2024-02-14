@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex; /* puts the items on the same line */
+    justify-content: space-between; /* space between the Dann. and the other elements */
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    width: 60px;
+    height: auto; /* auto will keep it the same as the width */ 
+    border: 2px solid #40b9e9;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 45px;
+    transition: .4s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    background: url(/images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 15px;
+    margin: 20px 0 30px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-family: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-box a:hover{
+    background: #40b9e9;
+    border: 2px solid #40b9e9;
+    transition: .2s;
+}
+
+.github-stats {
+    position: relative;
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+    display: none;
+}
